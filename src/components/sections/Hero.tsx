@@ -48,7 +48,7 @@ export default function Hero() {
       {/* Imagen de perfil */}
       <div className="flex justify-center md:justify-start w-full md:w-auto">
         <img
-          src="/personaje.webp"
+          src="/public/images/personaje.webp"
           alt="Foto de Francisco Mejía"
           className="sm:w-56 md:w-72 lg:w-96 hover:scale-105 transition-transform duration-300 rounded-full"
         />
