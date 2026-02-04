@@ -1,5 +1,7 @@
 # Portafolio Web - FranDev99
 
+[![Deployed](https://img.shields.io/badge/Ver_Portafolio-Live-blue?style=for-the-badge&logo=netlify&logoColor=white)](https://franmejia.netlify.app/)
+
 ¡Hola! Soy **Francisco**, ingeniero de multimedia de **Cali, Colombia**, enfocado en desarrollo web full-stack con énfasis en frontend. Aquí muestro mis proyectos personales y prácticas, construidos con tecnologías modernas como React, TypeScript, Tailwind y más.
 
 [![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
