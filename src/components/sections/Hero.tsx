@@ -7,6 +7,7 @@ import {
 } from "react-icons/fa";
 import { useHeroVisibility } from "../../hooks/useHeroVisibility";
 import { useSmoothScroll } from "../../hooks/useSmoothScroll";
+import SocialLink from "../ui/SocialLink";
 
 export default function Hero() {
   const { isHeroVisible } = useHeroVisibility("inicio");
@@ -19,24 +20,34 @@ export default function Hero() {
     >
       {/* Iconos sociales */}
       <div className="absolute right-6 top-1/2 transform -translate-y-1/2 text-gray-300 text-3xl hidden lg:flex flex-col gap-6">
-        <SocialLink href="https://github.com/FranDev99" icon={<FaGithub />} />
+        <SocialLink
+          href="https://github.com/FranDev99"
+          icon={<FaGithub />}
+          label="GitHub"
+        />
         <SocialLink
           href="https://www.linkedin.com/in/frandev99"
           icon={<FaLinkedin />}
+          label="LinkedIn"
         />
         <SocialLink
           href="https://mail.google.com/mail/?view=cm&fs=1&to=francisco.m.ocampo99@gmail.com"
           icon={<FaEnvelope />}
+          label="Email"
         />
       </div>
 
-      {/* Imagen / visual principal */}
+      {/* Imagen optimizada */}
       <div className="flex justify-center md:justify-start w-full md:w-auto">
-        {/* Aquí luego cambiamos el contenido visual */}
         <img
-          src="/images/personaje.webp"
+          src="/public/images/personaje.webp"
+          srcSet="/public/images/personaje-sm.webp 480w, /public/images/personaje.webp 768w, /public/images/personaje.webp 1200w" // Nuevo: responsive
+          sizes="(max-width: 768px) 56w, (max-width: 1024px) 72w, 96w"
           alt="Ilustración de Francisco Mejía"
-          className="sm:w-56 md:w-72 lg:w-96 hover:scale-105 transition-transform duration-300 rounded-full"
+          loading="lazy"
+          className="sm:w-56 md:w-72 lg:w-96 animate-[float_3s_ease-in-out_infinite] hover:scale-105 transition-transform duration-300 rounded-full"
+          width={384}
+          height={384}
         />
       </div>
 
@@ -74,9 +85,10 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Flecha hacia abajo */}
+      {/* Flecha */}
       <button
         onClick={() => scrollToId("sobre-mi")}
+        aria-label="Ir a Sobre mí"
         className={`absolute bottom-6 left-1/2 transform -translate-x-1/2 text-blue-400 text-4xl cursor-pointer hover:text-blue-300 hover:scale-110 transition-transform duration-300 ${
           isHeroVisible ? "animate-bounce" : "hidden"
         } hidden sm:block`}
@@ -86,20 +98,3 @@ export default function Hero() {
     </section>
   );
 }
-
-const SocialLink = ({
-  href,
-  icon,
-}: {
-  href: string;
-  icon: React.ReactNode;
-}) => (
-  <a
-    href={href}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="hover:text-blue-400 hover:scale-110 transition-transform duration-300"
-  >
-    {icon}
-  </a>
-);

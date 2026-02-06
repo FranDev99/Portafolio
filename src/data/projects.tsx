@@ -4,6 +4,7 @@ import { Project } from "../types";
 
 export const projects: Project[] = [
   {
+    id: 1,
     title: "GuitarLA",
     description:
       "Primer acercamiento a React, desarrollando un carrito de compras para una tienda de guitarras.",
@@ -18,6 +19,7 @@ export const projects: Project[] = [
     repo: "https://github.com/FranDev99/Proyectos/tree/main/guitarla",
   },
   {
+    id: 2,
     title: "Calculadora de Propinas",
     description:
       "Proyecto con TypeScript y Tailwind CSS para mejorar estructura y diseño.",
@@ -33,6 +35,7 @@ export const projects: Project[] = [
     repo: "https://github.com/FranDev99/Proyectos/tree/main/calculadora_propinas",
   },
   {
+    id: 3,
     title: "Contador de Calorías",
     description:
       "Registra calorías consumidas y gastadas para evaluar el déficit calórico.",
@@ -48,6 +51,7 @@ export const projects: Project[] = [
     repo: "https://github.com/FranDev99/Proyectos/tree/main/contador_calorias",
   },
   {
+    id: 4,
     title: "Controlador de Presupuesto",
     description:
       "Registra gastos y visualiza el presupuesto total mediante gráficos.",
@@ -62,6 +66,7 @@ export const projects: Project[] = [
     repo: "https://github.com/FranDev99/Proyectos/tree/main/control_presupuesto",
   },
   {
+    id: 5,
     title: "Cocktail",
     description:
       "Este proyecto permite buscar bebidas según sus ingredientes y categorías, además de agregarlas a favoritos y visualizarlas en una página aparte.",
@@ -77,6 +82,7 @@ export const projects: Project[] = [
     repo: "https://github.com/FranDev99/Proyectos/tree/main/Bebidas",
   },
   {
+    id: 6,
     title: "Recetas",
     description:
       "Este proyecto permite buscar recetas según sus ingredientes y categorías, a partir de una Api externa.",
