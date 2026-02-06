@@ -40,8 +40,8 @@ export default function Hero() {
       {/* Imagen optimizada */}
       <div className="flex justify-center md:justify-start w-full md:w-auto">
         <img
-          src="/public/images/personaje.webp"
-          srcSet="/public/images/personaje-sm.webp 480w, /public/images/personaje.webp 768w, /public/images/personaje.webp 1200w" // Nuevo: responsive
+          src="/images/personaje.webp"
+          srcSet="/images/personaje.webp 480w, /images/personaje.webp 768w, /images/personaje.webp 1200w" // Nuevo: responsive
           sizes="(max-width: 768px) 56w, (max-width: 1024px) 72w, 96w"
           alt="Ilustración de Francisco Mejía"
           loading="lazy"
@@ -68,7 +68,7 @@ export default function Hero() {
         <div className="flex flex-col items-center md:items-start gap-4 mt-4">
           <div className="flex flex-row justify-center md:justify-start gap-2 w-full">
             <a
-              href="/francisco_mejia_cv.pdf"
+              href="/documents/francisco_mejia_cv.pdf"
               download="francisco_mejia_cv.pdf"
               className="px-4 py-2 bg-gray-700 border-2 text-white rounded-lg font-semibold 
                 hover:bg-gray-600 hover:scale-105 transition-transform duration-300 w-auto"

@@ -8,7 +8,7 @@ export const projects: Project[] = [
     title: "GuitarLA",
     description:
       "Primer acercamiento a React, desarrollando un carrito de compras para una tienda de guitarras.",
-    image: "/src/assets/images/projects/guitarla.webp",
+    image: "/images/guitarla.webp",
     technologies: [
       <FaReact key="react" />,
       <FaJs key="js" />,
@@ -23,7 +23,7 @@ export const projects: Project[] = [
     title: "Calculadora de Propinas",
     description:
       "Proyecto con TypeScript y Tailwind CSS para mejorar estructura y diseño.",
-    image: "/src/assets/images/projects/calculadora_propinas.webp",
+    image: "/images/calculadora_propinas.webp",
     technologies: [
       <FaReact key="react" />,
       <SiTypescript key="ts" />,
@@ -39,7 +39,7 @@ export const projects: Project[] = [
     title: "Contador de Calorías",
     description:
       "Registra calorías consumidas y gastadas para evaluar el déficit calórico.",
-    image: "/src/assets/images/projects/contador_calorias.webp",
+    image: "/images/contador_calorias.webp",
     technologies: [
       <FaReact key="react" />,
       <SiTypescript key="ts" />,
@@ -55,7 +55,7 @@ export const projects: Project[] = [
     title: "Controlador de Presupuesto",
     description:
       "Registra gastos y visualiza el presupuesto total mediante gráficos.",
-    image: "/src/assets/images/projects/controlador_presupuesto.webp",
+    image: "/images/controlador_presupuesto.webp",
     technologies: [
       <FaReact key="react" />,
       <SiTypescript key="ts" />,
@@ -70,7 +70,7 @@ export const projects: Project[] = [
     title: "Cocktail",
     description:
       "Este proyecto permite buscar bebidas según sus ingredientes y categorías, además de agregarlas a favoritos y visualizarlas en una página aparte.",
-    image: "/src/assets/images/projects/bebidas.webp",
+    image: "/images/bebidas.webp",
     technologies: [
       <FaReact key="react" />,
       <SiTypescript key="ts" />,
@@ -86,7 +86,7 @@ export const projects: Project[] = [
     title: "Recetas",
     description:
       "Este proyecto permite buscar recetas según sus ingredientes y categorías, a partir de una Api externa.",
-    image: "/src/assets/images/projects/recetas.webp",
+    image: "/images/recetas.webp",
     technologies: [
       <FaReact key="react" />,
       <SiTypescript key="ts" />,

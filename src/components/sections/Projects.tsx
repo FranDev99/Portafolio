@@ -23,7 +23,6 @@ export default function Projects() {
           Algunos proyectos en los que he trabajado aplicando React.
         </p>
       </div>
-      ;
       <div
         className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto"
         role="list"
