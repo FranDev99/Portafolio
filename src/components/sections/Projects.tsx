@@ -24,6 +24,7 @@ export default function Projects() {
               src={project.image}
               alt={project.title}
               className="w-full h-40 object-cover"
+              loading="lazy"
             />
             <div className="p-4 flex flex-col flex-grow">
               <h3 className="text-lg font-semibold text-blue-300">
