@@ -18,8 +18,8 @@ export default function Hero() {
       id="inicio"
       className="relative min-h-screen flex flex-col md:flex-row justify-center items-center text-center md:text-left px-6 md:gap-10"
     >
-      {/* Iconos sociales */}
-      <div className="absolute right-6 top-1/2 transform -translate-y-1/2 text-gray-300 text-3xl hidden lg:flex flex-col gap-6">
+      {/* Redes sociales */}
+      <div className="absolute right-6 top-1/2 transform -translate-y-1/2 text-gray-500 text-2xl hidden lg:flex flex-col gap-6">
         <SocialLink
           href="https://github.com/FranDev99"
           icon={<FaGithub />}
@@ -31,57 +31,50 @@ export default function Hero() {
           label="LinkedIn"
         />
         <SocialLink
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=francisco.m.ocampo99@gmail.com"
+          href="mailto:francisco.m.ocampo99@gmail.com"
           icon={<FaEnvelope />}
           label="Email"
         />
       </div>
 
-      {/* Imagen optimizada */}
+      {/* Imagen */}
       <div className="flex justify-center md:justify-start w-full md:w-auto">
         <img
           src="/images/personaje.webp"
-          srcSet="/images/personaje.webp 480w, /images/personaje.webp 768w, /images/personaje.webp 1200w" // Nuevo: responsive
-          sizes="(max-width: 768px) 56w, (max-width: 1024px) 72w, 96w"
-          alt="Ilustración de Francisco Mejía"
-          loading="lazy"
-          className="sm:w-56 md:w-72 lg:w-96 animate-[float_3s_ease-in-out_infinite] hover:scale-105 transition-transform duration-300 rounded-full"
-          width={384}
-          height={384}
+          alt="Francisco Mejía"
+          className="sm:w-48 md:w-64 lg:w-80 rounded-full shadow-md"
         />
       </div>
 
       {/* Contenido */}
-      <div className="w-full max-w-2xl flex flex-col items-center md:items-start text-center md:text-left space-y-4 mt-6 md:mt-0">
-        <h2 className="text-4xl md:text-5xl font-semibold">¡Hola!</h2>
-        <h2 className="text-4xl sm:text-5xl md:text-5xl font-bold">
-          Soy <span className="text-blue-400">Francisco Mejía</span>
+      <div className="w-full max-w-2xl flex flex-col items-center md:items-start space-y-4 mt-6 md:mt-0">
+        <h1 className="text-4xl md:text-5xl font-bold">Francisco Mejía</h1>
+
+        <h2 className="text-xl md:text-2xl font-semibold text-blue-600">
+          Analista de Datos
         </h2>
-        <p className="text-lg text-gray-300 md:text-xl max-w-xl">
-          Ingeniero de Multimedia
-        </p>
-        <div className="flex items-center gap-2 text-lg text-gray-300 md:text-xl">
+
+        <div className="flex items-center gap-2 text-gray-500">
           <FaMapMarkerAlt />
-          <p>Cali, Colombia.</p>
+          <span>Cali, Colombia</span>
         </div>
 
-        <div className="flex flex-col items-center md:items-start gap-4 mt-4">
-          <div className="flex flex-row justify-center md:justify-start gap-2 w-full">
-            <a
-              href="/documents/francisco_mejia_cv.pdf"
-              download="francisco_mejia_cv.pdf"
-              className="px-4 py-2 bg-gray-700 border-2 text-white rounded-lg font-semibold 
-                hover:bg-gray-600 hover:scale-105 transition-transform duration-300 w-auto"
-            >
-              Descargar CV
-            </a>
-            <button
-              onClick={() => scrollToId("proyectos")}
-              className="px-4 py-2 rounded-lg cursor-pointer font-semibold bg-blue-600 hover:bg-blue-700 hover:scale-105 text-white transition-transform duration-300 w-auto"
-            >
-              Ver Proyectos
-            </button>
-          </div>
+        {/* Botones */}
+        <div className="flex gap-3 mt-4">
+          <a
+            href="/documents/francisco_mejia_cv.pdf"
+            download="francisco_mejia_cv.pdf"
+            className="px-5 py-2 bg-gray-800 text-white rounded-lg font-medium hover:bg-gray-700 transition"
+          >
+            Descargar CV
+          </a>
+
+          <button
+            onClick={() => scrollToId("proyectos")}
+            className="px-5 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition"
+          >
+            Ver Proyectos
+          </button>
         </div>
       </div>
 
@@ -89,7 +82,7 @@ export default function Hero() {
       <button
         onClick={() => scrollToId("sobre-mi")}
         aria-label="Ir a Sobre mí"
-        className={`absolute bottom-6 left-1/2 transform -translate-x-1/2 text-blue-400 text-4xl cursor-pointer hover:text-blue-300 hover:scale-110 transition-transform duration-300 ${
+        className={`absolute bottom-6 left-1/2 transform -translate-x-1/2 text-gray-500 text-3xl cursor-pointer hover:text-gray-700 transition ${
           isHeroVisible ? "animate-bounce" : "hidden"
         } hidden sm:block`}
       >

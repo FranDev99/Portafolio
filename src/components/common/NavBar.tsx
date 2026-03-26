@@ -27,7 +27,8 @@ export default function NavBar() {
     }
 
     const atBottom =
-      window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 10;
+      window.innerHeight + window.scrollY >=
+      document.documentElement.scrollHeight - 10;
 
     if (atBottom) {
       lastVisibleSection = "contacto";
@@ -48,24 +49,28 @@ export default function NavBar() {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-40 transition-all duration-300 ${
-        scrolling ? "backdrop-blur-md bg-gray-900/70 shadow-md" : "bg-transparent"
+        scrolling
+          ? "bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-200"
+          : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-6 py-4 flex justify-center items-center">
-        {/* Menú siempre visible en todas las resoluciones */}
-        <ul className="flex flex-row space-x-8 md:flex-row md:space-y-0 md:space-x-10 text-gray-300 uppercase text-sm md:text-base">
+        <ul className="flex flex-row space-x-8 md:space-x-10 text-gray-600 uppercase text-sm md:text-base font-medium">
           {sections.map(({ id, label }) => (
-            <li key={id} className="relative text-center md:text-left">
+            <li key={id} className="relative">
               <button
                 onClick={() => handleNavClick(id)}
-                className={`hover:text-blue-400 transition-all cursor-pointer hover:scale-105 duration-300 ${
-                  activeSection === id ? "text-blue-400 font-bold" : ""
+                className={`transition-all duration-200 cursor-pointer ${
+                  activeSection === id
+                    ? "text-blue-600 font-semibold"
+                    : "hover:text-gray-900"
                 }`}
               >
                 {label}
               </button>
+
               {activeSection === id && (
-                <div className="absolute left-0 bottom-[-6px] w-full h-[2px] bg-blue-400"></div>
+                <div className="absolute left-0 -bottom-1 w-full h-[2px] bg-blue-600 rounded"></div>
               )}
             </li>
           ))}
