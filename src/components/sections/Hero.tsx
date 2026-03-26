@@ -54,6 +54,11 @@ export default function Hero() {
           Analista de Datos
         </h2>
 
+        <p className="text-gray-600 text-lg max-w-xl">
+          Transformo datos en insights accionables mediante análisis,
+          visualización y modelado.
+        </p>
+
         <div className="flex items-center gap-2 text-gray-500">
           <FaMapMarkerAlt />
           <span>Cali, Colombia</span>

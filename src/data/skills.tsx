@@ -1,58 +1,33 @@
-import {
-  FaReact,
-  FaHtml5,
-  FaCss3Alt,
-  FaJs,
-  FaGitAlt,
-  FaGithub,
-} from "react-icons/fa";
-import {
-  SiTypescript,
-  SiTailwindcss,
-  SiNodedotjs,
-  SiExpress,
-} from "react-icons/si";
+import { FaDatabase, FaGitAlt, FaGithub, FaChartBar } from "react-icons/fa";
+import { SiPython, SiPandas } from "react-icons/si";
 
 export const skills = [
-  // Extrae array para reutilización/claridad
   {
-    icon: <FaHtml5 className="text-orange-500 text-2xl" />,
-    name: "HTML",
+    icon: <FaDatabase className="text-blue-600 text-2xl" />,
+    name: "SQL",
   },
   {
-    icon: <FaCss3Alt className="text-blue-500 text-2xl" />,
-    name: "CSS",
+    icon: <FaChartBar className="text-green-600 text-2xl" />,
+    name: "Excel",
   },
   {
-    icon: <FaJs className="text-yellow-400 text-2xl" />,
-    name: "JavaScript",
+    icon: <FaChartBar className="text-yellow-500 text-2xl" />,
+    name: "Power BI",
   },
   {
-    icon: <FaReact className="text-blue-400 text-2xl" />,
-    name: "React",
+    icon: <SiPython className="text-blue-500 text-2xl" />,
+    name: "Python",
   },
   {
-    icon: <SiTypescript className="text-blue-500 text-2xl" />,
-    name: "TypeScript",
+    icon: <SiPandas className="text-gray-700 text-2xl" />,
+    name: "Pandas",
   },
   {
-    icon: <SiNodedotjs className="text-green-400 text-2xl" />,
-    name: "Node",
-  },
-  {
-    icon: <SiExpress className="text-gray-400 text-2xl" />, // Corregido: gray en lugar de black
-    name: "Express",
-  },
-  {
-    icon: <SiTailwindcss className="text-blue-300 text-2xl" />,
-    name: "Tailwind",
-  },
-  {
-    icon: <FaGitAlt className="text-red-500 text-2xl" />,
+    icon: <FaGitAlt className="text-orange-500 text-2xl" />,
     name: "Git",
   },
   {
-    icon: <FaGithub className="text-white text-2xl" />,
+    icon: <FaGithub className="text-gray-800 text-2xl" />,
     name: "GitHub",
   },
 ];
