@@ -5,58 +5,49 @@ export default function Contact() {
   return (
     <section
       id="contacto"
-      className="py-10 px-5 text-center text-white"
+      className="py-16 px-5 text-center text-gray-800"
       aria-labelledby="contact-title"
     >
-      <header className="mb-6">
-        {" "}
-        {/* Semántico */}
+      <header className="mb-8">
         <h2
           id="contact-title"
-          className="text-4xl md:text-5xl font-bold text-blue-400"
+          className="text-4xl md:text-5xl font-bold text-blue-600"
         >
           Contacto
         </h2>
+
         <div
-          className="w-24 h-1 bg-blue-400 rounded-full mx-auto my-4"
+          className="w-24 h-1 bg-blue-600 rounded-full mx-auto my-4"
           aria-hidden="true"
         ></div>
+
+        <p className="text-lg text-gray-600 max-w-xl mx-auto">
+          Estoy disponible para oportunidades como analista de datos. Si buscas
+          apoyo en análisis, visualización o interpretación de datos, puedes
+          contactarme directamente.
+        </p>
       </header>
 
-      <address className="not-italic">
-        {" "}
-        {/* Semántico: contacto */}
-        <p className="mt-4 text-lg">
-          Envíame un mensaje a{" "}
-          <a
-            href="mailto:francisco.m.ocampo99@gmail.com"
-            className="text-blue-400 hover:underline"
-            aria-label="Enviar email a Francisco Mejía"
-          >
-            francisco.m.ocampo99@gmail.com
-          </a>
-        </p>
-      </address>
-
+      {/* Redes sociales */}
       <div
-        className="flex justify-center mt-6 gap-6 text-3xl"
+        className="flex justify-center mt-8 gap-6 text-2xl text-gray-500"
         role="list"
         aria-label="Enlaces sociales"
       >
         <SocialLink
           href="https://github.com/FranDev99"
           icon={<FaGithub />}
-          label="Perfil de GitHub de Francisco Mejía"
+          label="GitHub"
         />
         <SocialLink
           href="https://www.linkedin.com/in/frandev99"
           icon={<FaLinkedin />}
-          label="Perfil de LinkedIn de Francisco Mejía"
+          label="LinkedIn"
         />
         <SocialLink
           href="https://mail.google.com/mail/?view=cm&fs=1&to=francisco.m.ocampo99@gmail.com"
           icon={<FaEnvelope />}
-          label="Enviar email a Francisco Mejía"
+          label="Email"
         />
       </div>
     </section>

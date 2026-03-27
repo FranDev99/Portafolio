@@ -5,7 +5,7 @@ export interface Project {
     title: string;
     description: string;
     image: string;
-    technologies: React.ReactElement[];
+    technologies: string[];
     learning: string;
     liveDemo: string;
     repo: string;

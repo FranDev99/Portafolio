@@ -30,7 +30,10 @@ function App() {
         </section>
       </main>
 
-      <footer id="contacto" className="border-t border-gray-200 bg-white mt-10">
+      <footer
+        id="contacto"
+        className="border-t border-gray-200 bg-gray-50 mt-10"
+      >
         <div className="container mx-auto max-w-5xl px-6 py-10">
           <Suspense
             fallback={

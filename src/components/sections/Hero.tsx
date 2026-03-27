@@ -31,7 +31,7 @@ export default function Hero() {
           label="LinkedIn"
         />
         <SocialLink
-          href="mailto:francisco.m.ocampo99@gmail.com"
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=francisco.m.ocampo99@gmail.com"
           icon={<FaEnvelope />}
           label="Email"
         />
