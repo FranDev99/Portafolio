@@ -40,9 +40,9 @@ export default function Hero() {
       {/* Imagen */}
       <div className="flex justify-center md:justify-start w-full md:w-auto">
         <img
-          src="/images/personaje.webp"
+          src="/images/character.png"
           alt="Francisco Mejía"
-          className="sm:w-48 md:w-64 lg:w-80 rounded-full shadow-md"
+          className="sm:w-48 md:w-64 lg:w-100 rounded-full shadow-md"
         />
       </div>
 
